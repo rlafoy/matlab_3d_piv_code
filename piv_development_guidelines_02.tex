@@ -12,6 +12,7 @@
 \usepackage{enumitem} % For controlling the indentation of enumerate lists
 \usepackage{changepage} % This allows for temporary indenting of paragraphs
 \usepackage{color} % Allows for the definition of colors
+\usepackage{graphicx}% Include figure files
 
 % This sets some variables to control the indentation and spacing between paragraphs
 \newlength\tindent
@@ -100,6 +101,15 @@ Many of these items can be checked by simply looking over the code, but several 
 \section{\label{sec:level1}Code Development Guidelines}
 
 The guidelines that are presented in this section are primarily specific to the development of the new PIV code.  These guidelines are based upon the collective experience of many members of the lab and are primarily given here to avoid issues that arose during the development of the first version of Prana.  It is important to keep these rules in mind while writing any new PIV functions.
+
+\begin{figure}
+\begin{center}
+{
+\includegraphics[width=12cm]{code_quality.png}
+\caption{Following coding style guidelines is important to ensure that others may easily read, understand, and update your code. Source \textless http://xkcd.com/1513/\textgreater.}
+}
+\end{center}
+\end{figure}
 
 \subsection{\label{sec:level1}Code Commenting}
 
