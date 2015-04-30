@@ -2381,7 +2381,7 @@ end;
 
 % If the last index of A is less than the length of the vectors in A, this
 % cuts off the end of the vectors
-if A_Last_Index<length(A_ii);
+if (A_Last_Index<length(A_ii))||(A_Last_Index<length(A_value));
     % This removes the remaining portions of the replacement array vectors
     A_ii((A_Last_Index+1):end)=[];
     A_jj((A_Last_Index+1):end)=[];
@@ -2390,7 +2390,7 @@ end;
 
 % If the last index of B is less than the length of the vectors in B, this
 % cuts off the end of the vectors
-if B_Last_Index<length(B_ii);
+if (B_Last_Index<length(B_ii))||(B_Last_Index<length(B_value));
     % This removes the remaining portions of the retainment array vectors
     B_ii((B_Last_Index+1):end)=[];
     B_jj((B_Last_Index+1):end)=[];
